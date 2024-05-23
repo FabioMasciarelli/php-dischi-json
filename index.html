@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+    
     <!-- AXIOS -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
@@ -20,10 +24,10 @@
 
     <div id="main">
         <div id="card" v-for="movie in movies">
-            <div>
+            <div class="box-img">
                 <img :src="movie.poster" :alt="movie.title">
             </div>
-            <div>
+            <div class="movie-info">
                 <h2>{{ movie.title }}</h2>
                 <h4>{{ movie.author }}</h4>
                 <h3>{{ movie.year }}</h3>
