@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        header
+    </header>
+
+    <div id="main">
+        <div id="card" v-for="movie in movies">
+            <div>
+                <img :src="movie.poster" :alt="movie.title">
+            </div>
+            <div>
+                <h2>{{ movie.title }}</h2>
+                <h4>{{ movie.author }}</h4>
+                <h3>{{ movie.year }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        footer
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
