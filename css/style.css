@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
 .center {
     text-align: center;
 }
@@ -34,13 +38,15 @@ main {
     flex-direction: column;
     align-items: center;
     color: white;
-    background-color: #102030;
+    background-color: red;
+    /* background-color: #102030; */
     padding: 20px;
     width: calc(100% / 3 - 20px);
 }
 
 .box-img {
-    width: 70%;
+    margin: 0 auto;
+    width: 60%;
 }
 
 .disk-info {

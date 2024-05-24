@@ -28,7 +28,7 @@
     </header>
 
     <main id="main">
-        <div class="card" v-for="disk in disks">
+        <div class="card" v-for="(disk, index) in disks" @click="like(index)">
             <div class="box-img">
                 <img :src="disk.poster" :alt="disk.title">
             </div>
